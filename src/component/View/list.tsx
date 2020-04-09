@@ -5,6 +5,7 @@ import {
   useDynamicStyleSheet,
 } from 'react-native-dark-mode';
 import { colorPreset } from '../../design';
+import { View, StyleSheet } from 'react-native';
 
 const dynamicStyles = new DynamicStyleSheet({
   containerStyle: {
@@ -22,7 +23,17 @@ const dynamicStyles = new DynamicStyleSheet({
   rightSubtitleStyle: {
     color: colorPreset.labelColor.primary,
   },
+  opaqueSeparator: {
+    backgroundColor: colorPreset.separator.opaque,
+    height: StyleSheet.hairlineWidth,
+    marginLeft: 16,
+  },
 });
+
+export const Divider = () => {
+  const styles = useDynamicStyleSheet(dynamicStyles);
+  return <View style={styles.opaqueSeparator} />;
+};
 
 export const ListItem = ({
   containerStyle,
