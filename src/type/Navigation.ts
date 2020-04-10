@@ -3,3 +3,8 @@ export type MainTabParamList = {
   SystemInfo: undefined;
   DesignList: undefined;
 };
+
+export type MainStackParamList = {
+  MainTab: undefined;
+  RNDeviceInfoList: undefined;
+};

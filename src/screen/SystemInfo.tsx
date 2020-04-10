@@ -9,13 +9,15 @@ export default () => {
       <Card shadow>
         <ListItem
           title={'width'}
-          rightTitle={`${width}pt`}
+          rightTitle={`${Number.isInteger(width) ? width : width.toFixed(2)}pt`}
           rightSubtitle={`${width * scale}px`}
         />
         <Divider />
         <ListItem
           title={'height'}
-          rightTitle={`${height}pt`}
+          rightTitle={`${
+            Number.isInteger(height) ? height : height.toFixed(2)
+          }pt`}
           rightSubtitle={`${height * scale}px`}
         />
         <Divider />
