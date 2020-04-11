@@ -10,7 +10,10 @@
 
 import React from 'react';
 import { DarkModeProvider } from 'react-native-dark-mode';
+import { enableScreens } from 'react-native-screens';
 import AppNavigationContainer from './src/screen/AppNavigationContainer';
+
+enableScreens();
 
 const App = () => {
   return (
