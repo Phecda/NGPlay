@@ -1,13 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { StackNavigationProp } from '@react-navigation/stack';
 import DeviceInfo from 'react-native-device-info';
-import { ListItem, BGScroll, Card, Divider, BGList } from '../component/View';
-import { MainStackParamList } from '../type/Navigation';
-
-type NavigationProp = StackNavigationProp<
-  MainStackParamList,
-  'RNDeviceInfoList'
->;
+import { ListItem, Divider, BGList } from '../component/View';
 
 type DeviceInfoMethod = keyof typeof DeviceInfo;
 
@@ -34,10 +27,11 @@ const DeviceInfoItem = ({ k }: { k: DeviceInfoMethod }) => {
   return <ListItem title={k} subtitle={v} onPress={onEval} />;
 };
 
-const RNDeviceInfoList = ({ navigation }: { navigation: NavigationProp }) => {
+const RNDeviceInfoList = () => {
   return (
     <BGList
       data={keys}
+      ItemSeparatorComponent={Divider}
       renderItem={({ item }) => {
         return <DeviceInfoItem k={item} />;
       }}
