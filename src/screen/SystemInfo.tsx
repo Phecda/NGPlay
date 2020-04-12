@@ -6,7 +6,10 @@ import { MainTabScreenProps } from '../type/Navigation';
 
 declare var global: { HermesInternal: null | {} };
 
-export default ({ navigation, route }: MainTabScreenProps<'SystemInfo'>) => {
+const SystemInfo = ({
+  navigation,
+  route,
+}: MainTabScreenProps<'SystemInfo'>) => {
   const { width, height, fontScale, scale } = useWindowDimensions();
   return (
     <BGScroll white>
@@ -49,3 +52,5 @@ export default ({ navigation, route }: MainTabScreenProps<'SystemInfo'>) => {
     </BGScroll>
   );
 };
+
+export default SystemInfo;

@@ -34,3 +34,15 @@ export const groupedBackgroundColor = {
   secondary: new DynamicValue('#FFFFFF', '#1C1C1E'),
   tertiary: new DynamicValue('#F2F2F7', '#2C2C2E'),
 };
+
+export const rainbow = {
+  blue: new DynamicValue('rgb(0,122,255)', 'rgb(10,132,255)'),
+  green: new DynamicValue('rgb(52,199,89)', 'rgb(48,209,88)'),
+  indigo: new DynamicValue('rgb(88,86,214)', 'rgb(94,92,230)'),
+  orange: new DynamicValue('rgb(255,149,0)', 'rgb(255,159,10)'),
+  pink: new DynamicValue('rgb(255,45,85)', 'rgb(255,55,95)'),
+  purple: new DynamicValue('rgb(175,82,222)', 'rgb(191,90,242)'),
+  red: new DynamicValue('rgb(255,59,48)', 'rgb(255,69,58)'),
+  teal: new DynamicValue('rgb(90,200,250)', 'rgb(100,210,255)'),
+  yellow: new DynamicValue('rgb(255,204,0)', 'rgb(255,214,10)'),
+};

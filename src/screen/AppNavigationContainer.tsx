@@ -13,10 +13,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { MainTabParamList, MainStackParamList } from '../type/Navigation';
 import SystemInfo from './SystemInfo';
 import DesignList from './DesignList';
-import { useDynamicValue } from 'react-native-dark-mode';
-import { colorPreset } from '../design';
+import { useDarkMode } from 'react-native-dark-mode';
+import { themeForNav } from '../design';
 import RNDeviceInfoList from './RNDeviceInfo';
-import { StyleSheet } from 'react-native';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -33,9 +32,6 @@ function getTabHeader(
 }
 
 const Home = () => {
-  const backgroundColor = useDynamicValue(colorPreset.backgroundColor.primary);
-  const tintColor = useDynamicValue(colorPreset.linkColor);
-  const opaqueSeparator = useDynamicValue(colorPreset.separator.opaque);
   return (
     <MainTab.Navigator
       screenOptions={({ route }) => {
@@ -69,13 +65,6 @@ const Home = () => {
           },
         };
       }}
-      tabBarOptions={{
-        activeTintColor: tintColor,
-        style: {
-          backgroundColor: backgroundColor,
-          borderTopColor: opaqueSeparator,
-        },
-      }}
     >
       <MainTab.Screen name="SystemInfo" component={SystemInfo} />
       <MainTab.Screen name="DesignList" component={DesignList} />
@@ -86,20 +75,13 @@ const Home = () => {
 const MainStack = createStackNavigator<MainStackParamList>();
 
 export default () => {
-  const backgroundColor = useDynamicValue(colorPreset.backgroundColor.primary);
-  const primaryLabelColor = useDynamicValue(colorPreset.labelColor.primary);
-  const opaqueSeparator = useDynamicValue(colorPreset.separator.opaque);
+  const inDarkMode = useDarkMode();
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      theme={inDarkMode ? themeForNav.dark : themeForNav.light}
+    >
       <MainStack.Navigator
         screenOptions={{
-          headerStyle: {
-            backgroundColor,
-            shadowOffset: { width: 0, height: 0 },
-            borderBottomColor: opaqueSeparator,
-            borderBottomWidth: StyleSheet.hairlineWidth,
-          },
-          headerTintColor: primaryLabelColor,
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
         }}
       >

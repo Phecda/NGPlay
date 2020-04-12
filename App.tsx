@@ -13,6 +13,13 @@ import { DarkModeProvider } from 'react-native-dark-mode';
 import { enableScreens } from 'react-native-screens';
 import AppNavigationContainer from './src/screen/AppNavigationContainer';
 
+if (__DEV__) {
+  const whyDidYouRender = require('@welldone-software/why-did-you-render');
+  whyDidYouRender(React, {
+    trackAllPureComponents: false,
+  });
+}
+
 enableScreens();
 
 const App = () => {

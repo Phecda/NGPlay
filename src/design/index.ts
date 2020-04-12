@@ -1,3 +1,3 @@
 import * as colorPreset from './color';
-
-export { colorPreset };
+import * as themeForNav from './themeForReactNavigation';
+export { colorPreset, themeForNav };
