@@ -11,7 +11,10 @@
     "commit": "git-cz"
   },
   "dependencies": {
+    "@huse/boolean": "^1.0.2",
+    "@huse/immer": "^1.0.2",
     "@huse/previous-value": "^1.0.1",
+    "@react-native-community/art": "^1.2.0",
     "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/bottom-tabs": "^5.2.5",
     "@react-navigation/drawer": "^5.4.0",
@@ -24,11 +27,14 @@
     "react-native-device-info": "^5.5.4",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.6.1",
+    "react-native-progress": "^4.1.2",
     "react-native-reanimated": "^1.7.1",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.4.0",
     "react-native-tab-view": "^2.13.0",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "9.1.1",
+    "url-parse": "^1.4.7"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -39,6 +45,7 @@
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.62.0",
     "@types/react-test-renderer": "16.9.2",
+    "@types/url-parse": "^1.4.3",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "@welldone-software/why-did-you-render": "^4.0.7",

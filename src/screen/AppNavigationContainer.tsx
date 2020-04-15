@@ -16,6 +16,8 @@ import DesignList from './DesignList';
 import { useDarkMode } from 'react-native-dark-mode';
 import { themeForNav } from '../design';
 import RNDeviceInfoList from './RNDeviceInfo';
+import WebviewScreen from './WebviewScreen';
+import { Platform } from 'react-native';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -74,7 +76,7 @@ const Home = () => {
 
 const MainStack = createStackNavigator<MainStackParamList>();
 
-export default () => {
+const Container = () => {
   const inDarkMode = useDarkMode();
   return (
     <NavigationContainer
@@ -96,7 +98,17 @@ export default () => {
           name="RNDeviceInfoList"
           component={RNDeviceInfoList}
         />
+        <MainStack.Screen
+          name="WebviewScreen"
+          component={WebviewScreen}
+          options={({ navigation, route }) => ({
+            // FIXME: https://github.com/react-native-community/react-native-webview/issues/575#issuecomment-587267906
+            animationEnabled: Platform.OS === 'ios',
+          })}
+        />
       </MainStack.Navigator>
     </NavigationContainer>
   );
 };
+
+export default Container;

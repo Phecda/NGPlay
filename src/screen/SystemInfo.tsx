@@ -48,6 +48,15 @@ const SystemInfo = ({
           onPress={() => navigation.navigate('RNDeviceInfoList')}
           chevron
         />
+        <Divider />
+        <ListItem
+          title={'RNCWebview'}
+          onPress={() =>
+            navigation.navigate('WebviewScreen', {
+              uri: 'https://www.baidu.com',
+            })
+          }
+        />
       </Card>
     </BGScroll>
   );

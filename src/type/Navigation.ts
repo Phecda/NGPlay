@@ -10,6 +10,7 @@ export type MainTabParamList = {
 export type MainStackParamList = {
   MainTab: undefined;
   RNDeviceInfoList: undefined;
+  WebviewScreen: { uri: string } | undefined;
 };
 
 export type MainTabScreenProps<RouteName extends keyof MainTabParamList> = {
