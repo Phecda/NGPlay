@@ -1170,6 +1170,11 @@
   resolved "https://registry.npm.taobao.org/@react-native-community/masked-view/download/@react-native-community/masked-view-0.1.7.tgz#a65ce0702f55cb67fd777995de6fc7b3e5781903"
   integrity sha1-plzgcC9Vy2f9d3mV3m/Hs+V4GQM=
 
+"@react-native-community/netinfo@^5.7.1":
+  version "5.7.1"
+  resolved "https://registry.npm.taobao.org/@react-native-community/netinfo/download/@react-native-community/netinfo-5.7.1.tgz#715a6061307055c6aa59c901bca313050695f75e"
+  integrity sha1-cVpgYTBwVcaqWckBvKMTBQaV914=
+
 "@react-navigation/bottom-tabs@^5.2.5":
   version "5.2.5"
   resolved "https://registry.npm.taobao.org/@react-navigation/bottom-tabs/download/@react-navigation/bottom-tabs-5.2.5.tgz#d434dbf99bd963005d13d05eec3558ae12b9f1af"

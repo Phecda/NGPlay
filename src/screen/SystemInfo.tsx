@@ -1,6 +1,7 @@
 import React from 'react';
 import { useWindowDimensions } from 'react-native';
 import { screensEnabled } from 'react-native-screens';
+import { useNetInfo } from '@react-native-community/netinfo';
 import { ListItem, BGScroll, Card, Divider } from '../component/View';
 import { MainTabScreenProps } from '../type/Navigation';
 import { useI18nStrings } from '../i18n';
@@ -12,6 +13,7 @@ const SystemInfo = ({
   route,
 }: MainTabScreenProps<'SystemInfo'>) => {
   const strings = useI18nStrings();
+  const netInfo = useNetInfo();
   const { width, height, fontScale, scale } = useWindowDimensions();
   return (
     <BGScroll white>
@@ -42,6 +44,21 @@ const SystemInfo = ({
         <ListItem
           title={'screen enabled'}
           rightTitle={screensEnabled().toString()}
+        />
+      </Card>
+      <Card shadow>
+        <ListItem title="type" rightTitle={netInfo.type} />
+        <Divider />
+        <ListItem
+          title="isInternetReachable"
+          rightTitle={`${netInfo.isInternetReachable}`}
+        />
+        <Divider />
+        <ListItem title="isConnected" rightTitle={`${netInfo.isConnected}`} />
+        <Divider />
+        <ListItem
+          title="details"
+          rightTitle={JSON.stringify(netInfo.details)}
         />
       </Card>
       <Card shadow>
