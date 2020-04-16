@@ -6920,6 +6920,11 @@ react-native-iphone-x-helper@^1.2.1:
   resolved "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
   integrity sha1-ZF4v+7tJ6AhEu0y740oSb9oeZ3I=
 
+react-native-localize@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npm.taobao.org/react-native-localize/download/react-native-localize-1.4.0.tgz#4653596d066d0941c48f5404dc1c0d08b6950443"
+  integrity sha1-RlNZbQZtCUHEj1QE3BwNCLaVBEM=
+
 react-native-progress@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/react-native-progress/download/react-native-progress-4.1.2.tgz#ffb2264ddfeba409c730e36a9791bb7bbe07a00d"

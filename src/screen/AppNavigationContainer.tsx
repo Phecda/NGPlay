@@ -18,6 +18,8 @@ import { themeForNav } from '../design';
 import RNDeviceInfoList from './RNDeviceInfo';
 import WebviewScreen from './WebviewScreen';
 import { Platform } from 'react-native';
+import RNLocalize from './RNLocalize';
+import { useI18nStrings } from '../i18n';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -78,6 +80,7 @@ const MainStack = createStackNavigator<MainStackParamList>();
 
 const Container = () => {
   const inDarkMode = useDarkMode();
+  const strings = useI18nStrings();
   return (
     <NavigationContainer
       theme={inDarkMode ? themeForNav.dark : themeForNav.light}
@@ -85,6 +88,7 @@ const Container = () => {
       <MainStack.Navigator
         screenOptions={{
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
+          headerTruncatedBackTitle: strings.navigation.back,
         }}
       >
         <MainStack.Screen
@@ -106,6 +110,7 @@ const Container = () => {
             animationEnabled: Platform.OS === 'ios',
           })}
         />
+        <MainStack.Screen name="RNLocalize" component={RNLocalize} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

@@ -64,6 +64,7 @@
 		8362A23EE219E5DDEC7EAE08 /* libPods-NGPlay-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9229FB3695E83651E4D11D5 /* Pods-NGPlay-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOSTests/Pods-NGPlay-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4732ECC7CC9112665571B01 /* libPods-NGPlay-NGPlayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-NGPlayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE18667F24480E4200FBDC7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F63897AFB5B07795089F34F9 /* Pods-NGPlay-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOS/Pods-NGPlay-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +315,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -670,6 +672,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				13B07FB21A68108700A75B9A /* Base */,
+				CE18667F24480E4200FBDC7A /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			path = NGPlay;

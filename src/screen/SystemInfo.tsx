@@ -3,6 +3,7 @@ import { useWindowDimensions } from 'react-native';
 import { screensEnabled } from 'react-native-screens';
 import { ListItem, BGScroll, Card, Divider } from '../component/View';
 import { MainTabScreenProps } from '../type/Navigation';
+import { useI18nStrings } from '../i18n';
 
 declare var global: { HermesInternal: null | {} };
 
@@ -10,6 +11,7 @@ const SystemInfo = ({
   navigation,
   route,
 }: MainTabScreenProps<'SystemInfo'>) => {
+  const strings = useI18nStrings();
   const { width, height, fontScale, scale } = useWindowDimensions();
   return (
     <BGScroll white>
@@ -56,6 +58,14 @@ const SystemInfo = ({
               uri: 'https://www.baidu.com',
             })
           }
+          chevron
+        />
+        <Divider />
+        <ListItem
+          title={'RNLocalize'}
+          onPress={() => navigation.navigate('RNLocalize')}
+          rightTitle={strings.name}
+          chevron
         />
       </Card>
     </BGScroll>
