@@ -41,6 +41,7 @@ export const ListItem = ({
   subtitleStyle,
   rightTitleStyle,
   rightSubtitleStyle,
+  chevron,
   ...props
 }: ListItemProps) => {
   const styles = useDynamicStyleSheet(dynamicStyles);
@@ -51,6 +52,7 @@ export const ListItem = ({
       subtitleStyle={[styles.subtitleStyle, subtitleStyle]}
       rightTitleStyle={[styles.rightTitleStyle, rightTitleStyle]}
       rightSubtitleStyle={[styles.rightSubtitleStyle, rightSubtitleStyle]}
+      chevron={chevron ?? !!props.onPress}
       {...props}
     />
   );

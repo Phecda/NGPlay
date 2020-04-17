@@ -1,0 +1,11 @@
+/*
+  InfoPlist.strings
+  NGPlay
+
+  Created by Phecda on 2020/4/16.
+
+*/
+"NSCameraUsageDescription" = "拍照或扫码功能需要使用相机";
+"NSLocationWhenInUseUsageDescription" = "为保证安全，需要定位";
+"NSPhotoLibraryAddUsageDescription" = "向照片图库中添加照片";
+"NSPhotoLibraryUsageDescription" = "诸如扫码、设置头像等功能需要从照片图库中读取图片";

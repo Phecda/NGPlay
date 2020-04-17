@@ -84,6 +84,12 @@ const SystemInfo = ({
           rightTitle={strings.name}
           chevron
         />
+        <Divider />
+        <ListItem
+          title={'Camera'}
+          onPress={() => navigation.navigate('RNCamera')}
+          chevron
+        />
       </Card>
     </BGScroll>
   );

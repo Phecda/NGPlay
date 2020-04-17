@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* NGPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NGPlayTests.m */; };
-		1164347145E0DAEFB1F33C34 /* libPods-NGPlay-NGPlayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4732ECC7CC9112665571B01 /* libPods-NGPlay-NGPlayTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		288FC1B5F87808D918D46453 /* libPods-NGPlay-NGPlayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D648C16083965167A7A246 /* libPods-NGPlay-NGPlayTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* NGPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NGPlayTests.m */; };
-		39CDDEC249ED7996A20106D1 /* libPods-NGPlay-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362A23EE219E5DDEC7EAE08 /* libPods-NGPlay-tvOSTests.a */; };
-		838E2F862CDD952C9D5DC6B9 /* libPods-NGPlay-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5580CA2F58A9BDE573C2079C /* libPods-NGPlay-tvOS.a */; };
-		EA2B88C952C6F50E4262BF80 /* libPods-NGPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3171A28C23A862E6FC323C63 /* libPods-NGPlay.a */; };
+		6042DD5EE85D210DAA8FB423 /* libPods-NGPlay-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B8A9D1FA03C19814654981 /* libPods-NGPlay-tvOS.a */; };
+		B42641190DD22299CEC01B2A /* libPods-NGPlay-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE3472145785462D072698D /* libPods-NGPlay-tvOSTests.a */; };
+		CA3002C2EBE7552EB8773862 /* libPods-NGPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3331BC6083E76C70FC7C040E /* libPods-NGPlay.a */; };
+		CE18668224486D6800FBDC7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE18668424486D6800FBDC7A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,23 +52,25 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NGPlay/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NGPlay/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NGPlay/main.m; sourceTree = "<group>"; };
+		22BEBA34B828B68BDA82E305 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-NGPlayTests.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-NGPlayTests/Pods-NGPlay-NGPlayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* NGPlay-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NGPlay-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* NGPlay-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NGPlay-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3171A28C23A862E6FC323C63 /* libPods-NGPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D7CC1980131F16F91F5A16 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-NGPlayTests.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-NGPlayTests/Pods-NGPlay-NGPlayTests.debug.xcconfig"; sourceTree = "<group>"; };
-		443F453B1BD772B1E17E2102 /* Pods-NGPlay-NGPlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-NGPlayTests.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-NGPlayTests/Pods-NGPlay-NGPlayTests.release.xcconfig"; sourceTree = "<group>"; };
-		4855A1A8C2536C58DF04B3FA /* Pods-NGPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay/Pods-NGPlay.debug.xcconfig"; sourceTree = "<group>"; };
-		5580CA2F58A9BDE573C2079C /* libPods-NGPlay-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		698938961D6FF8AC4FCF2E29 /* Pods-NGPlay-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOSTests/Pods-NGPlay-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		73D0BCB1250DAB139582F311 /* Pods-NGPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay.release.xcconfig"; path = "Target Support Files/Pods-NGPlay/Pods-NGPlay.release.xcconfig"; sourceTree = "<group>"; };
-		781EA07544832578A8678DC7 /* Pods-NGPlay-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOS/Pods-NGPlay-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8362A23EE219E5DDEC7EAE08 /* libPods-NGPlay-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9229FB3695E83651E4D11D5 /* Pods-NGPlay-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOSTests/Pods-NGPlay-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		C4732ECC7CC9112665571B01 /* libPods-NGPlay-NGPlayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-NGPlayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE3472145785462D072698D /* libPods-NGPlay-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3331BC6083E76C70FC7C040E /* libPods-NGPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCA2EF5483F07B06AE9B302 /* Pods-NGPlay-NGPlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-NGPlayTests.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-NGPlayTests/Pods-NGPlay-NGPlayTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F7DD72637495F202B0A046C /* Pods-NGPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay.release.xcconfig"; path = "Target Support Files/Pods-NGPlay/Pods-NGPlay.release.xcconfig"; sourceTree = "<group>"; };
+		97422F73DEA00BC480DA2587 /* Pods-NGPlay-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOS/Pods-NGPlay-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B2B8A9D1FA03C19814654981 /* libPods-NGPlay-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71DD678E7D90A14A575E160 /* Pods-NGPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay/Pods-NGPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		CB37CBA7FB02085DAB6424CF /* Pods-NGPlay-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOSTests/Pods-NGPlay-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE18667F24480E4200FBDC7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CE18668324486D6800FBDC7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE18668524486D6F00FBDC7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CF55E7A4CE74442883154991 /* Pods-NGPlay-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOSTests/Pods-NGPlay-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6D648C16083965167A7A246 /* libPods-NGPlay-NGPlayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NGPlay-NGPlayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F63897AFB5B07795089F34F9 /* Pods-NGPlay-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOS/Pods-NGPlay-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		FDAF748FE731FEA71CABBF01 /* Pods-NGPlay-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPlay-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NGPlay-tvOS/Pods-NGPlay-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1164347145E0DAEFB1F33C34 /* libPods-NGPlay-NGPlayTests.a in Frameworks */,
+				288FC1B5F87808D918D46453 /* libPods-NGPlay-NGPlayTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA2B88C952C6F50E4262BF80 /* libPods-NGPlay.a in Frameworks */,
+				CA3002C2EBE7552EB8773862 /* libPods-NGPlay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838E2F862CDD952C9D5DC6B9 /* libPods-NGPlay-tvOS.a in Frameworks */,
+				6042DD5EE85D210DAA8FB423 /* libPods-NGPlay-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39CDDEC249ED7996A20106D1 /* libPods-NGPlay-tvOSTests.a in Frameworks */,
+				B42641190DD22299CEC01B2A /* libPods-NGPlay-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +136,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				CE18668424486D6800FBDC7A /* InfoPlist.strings */,
 			);
 			name = NGPlay;
 			sourceTree = "<group>";
@@ -142,10 +146,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				3171A28C23A862E6FC323C63 /* libPods-NGPlay.a */,
-				C4732ECC7CC9112665571B01 /* libPods-NGPlay-NGPlayTests.a */,
-				5580CA2F58A9BDE573C2079C /* libPods-NGPlay-tvOS.a */,
-				8362A23EE219E5DDEC7EAE08 /* libPods-NGPlay-tvOSTests.a */,
+				3331BC6083E76C70FC7C040E /* libPods-NGPlay.a */,
+				D6D648C16083965167A7A246 /* libPods-NGPlay-NGPlayTests.a */,
+				B2B8A9D1FA03C19814654981 /* libPods-NGPlay-tvOS.a */,
+				2FE3472145785462D072698D /* libPods-NGPlay-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,14 +190,14 @@
 		978F2DE249B40372BE3CFB34 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4855A1A8C2536C58DF04B3FA /* Pods-NGPlay.debug.xcconfig */,
-				73D0BCB1250DAB139582F311 /* Pods-NGPlay.release.xcconfig */,
-				36D7CC1980131F16F91F5A16 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */,
-				443F453B1BD772B1E17E2102 /* Pods-NGPlay-NGPlayTests.release.xcconfig */,
-				781EA07544832578A8678DC7 /* Pods-NGPlay-tvOS.debug.xcconfig */,
-				F63897AFB5B07795089F34F9 /* Pods-NGPlay-tvOS.release.xcconfig */,
-				698938961D6FF8AC4FCF2E29 /* Pods-NGPlay-tvOSTests.debug.xcconfig */,
-				B9229FB3695E83651E4D11D5 /* Pods-NGPlay-tvOSTests.release.xcconfig */,
+				C71DD678E7D90A14A575E160 /* Pods-NGPlay.debug.xcconfig */,
+				7F7DD72637495F202B0A046C /* Pods-NGPlay.release.xcconfig */,
+				22BEBA34B828B68BDA82E305 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */,
+				3DCA2EF5483F07B06AE9B302 /* Pods-NGPlay-NGPlayTests.release.xcconfig */,
+				FDAF748FE731FEA71CABBF01 /* Pods-NGPlay-tvOS.debug.xcconfig */,
+				97422F73DEA00BC480DA2587 /* Pods-NGPlay-tvOS.release.xcconfig */,
+				CB37CBA7FB02085DAB6424CF /* Pods-NGPlay-tvOSTests.debug.xcconfig */,
+				CF55E7A4CE74442883154991 /* Pods-NGPlay-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -205,11 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NGPlayTests" */;
 			buildPhases = (
-				AF7CA5B873F71A1FB4E56637 /* [CP] Check Pods Manifest.lock */,
+				55827B61ABE11DB99B73D735 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D5D387F840E9276032E1A161 /* [CP] Copy Pods Resources */,
+				9C9F0214FCC18C3F9F8BC0FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,13 +229,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NGPlay" */;
 			buildPhases = (
-				6A48AA69620DEC1B74C29AD2 /* [CP] Check Pods Manifest.lock */,
+				E918BDC659F0D3C5A862E50A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				FFA47E9D3DB73E89ADF80B32 /* [CP] Copy Pods Resources */,
+				F497E0579BFD083304C65F31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NGPlay-tvOS" */;
 			buildPhases = (
-				7F2C2457986D77ADA13C1AA9 /* [CP] Check Pods Manifest.lock */,
+				AB335EA7C3C420CEB5EFF28A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -266,7 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NGPlay-tvOSTests" */;
 			buildPhases = (
-				69E7B5B017B17519E840477E /* [CP] Check Pods Manifest.lock */,
+				B9AC4E502CB670D7CB94DDC9 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -343,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CE18668224486D6800FBDC7A /* InfoPlist.strings in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,73 +398,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		69E7B5B017B17519E840477E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NGPlay-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A48AA69620DEC1B74C29AD2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NGPlay-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F2C2457986D77ADA13C1AA9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NGPlay-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF7CA5B873F71A1FB4E56637 /* [CP] Check Pods Manifest.lock */ = {
+		55827B61ABE11DB99B73D735 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,7 +420,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5D387F840E9276032E1A161 /* [CP] Copy Pods Resources */ = {
+		9C9F0214FCC18C3F9F8BC0FE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -529,7 +468,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NGPlay-NGPlayTests/Pods-NGPlay-NGPlayTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD10A7F022414F080027D42C /* Start Packager */ = {
+		AB335EA7C3C420CEB5EFF28A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,18 +476,21 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Start Packager";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGPlay-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 0\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+		B9AC4E502CB670D7CB94DDC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,18 +498,43 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Start Packager";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGPlay-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FFA47E9D3DB73E89ADF80B32 /* [CP] Copy Pods Resources */ = {
+		E918BDC659F0D3C5A862E50A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F497E0579BFD083304C65F31 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,6 +580,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NGPlay/Pods-NGPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 0\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -678,12 +683,21 @@
 			path = NGPlay;
 			sourceTree = "<group>";
 		};
+		CE18668424486D6800FBDC7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE18668324486D6800FBDC7A /* en */,
+				CE18668524486D6F00FBDC7A /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36D7CC1980131F16F91F5A16 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */;
+			baseConfigurationReference = 22BEBA34B828B68BDA82E305 /* Pods-NGPlay-NGPlayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -706,7 +720,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 443F453B1BD772B1E17E2102 /* Pods-NGPlay-NGPlayTests.release.xcconfig */;
+			baseConfigurationReference = 3DCA2EF5483F07B06AE9B302 /* Pods-NGPlay-NGPlayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -726,7 +740,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4855A1A8C2536C58DF04B3FA /* Pods-NGPlay.debug.xcconfig */;
+			baseConfigurationReference = C71DD678E7D90A14A575E160 /* Pods-NGPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -754,7 +768,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73D0BCB1250DAB139582F311 /* Pods-NGPlay.release.xcconfig */;
+			baseConfigurationReference = 7F7DD72637495F202B0A046C /* Pods-NGPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -776,7 +790,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 781EA07544832578A8678DC7 /* Pods-NGPlay-tvOS.debug.xcconfig */;
+			baseConfigurationReference = FDAF748FE731FEA71CABBF01 /* Pods-NGPlay-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -804,7 +818,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63897AFB5B07795089F34F9 /* Pods-NGPlay-tvOS.release.xcconfig */;
+			baseConfigurationReference = 97422F73DEA00BC480DA2587 /* Pods-NGPlay-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -832,7 +846,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 698938961D6FF8AC4FCF2E29 /* Pods-NGPlay-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = CB37CBA7FB02085DAB6424CF /* Pods-NGPlay-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -859,7 +873,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9229FB3695E83651E4D11D5 /* Pods-NGPlay-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = CF55E7A4CE74442883154991 /* Pods-NGPlay-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

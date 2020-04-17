@@ -37,8 +37,14 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Use your camera to take a photo or scan codes</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Use your location to check security</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Add photos to your photo library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Read images from your photo library to set a avatar or scan codes</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

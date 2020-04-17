@@ -20,6 +20,7 @@ import WebviewScreen from './WebviewScreen';
 import { Platform } from 'react-native';
 import RNLocalize from './RNLocalize';
 import { useI18nStrings } from '../i18n';
+import CameraScreen from './CameraScreen';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -111,6 +112,7 @@ const Container = () => {
           })}
         />
         <MainStack.Screen name="RNLocalize" component={RNLocalize} />
+        <MainStack.Screen name="RNCamera" component={CameraScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

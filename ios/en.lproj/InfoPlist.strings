@@ -1,0 +1,11 @@
+/*
+  InfoPlist.strings
+  NGPlay
+
+  Created by Phecda on 2020/4/16.
+
+*/
+"NSCameraUsageDescription" = "Use your camera to take a photo or scan codes";
+"NSLocationWhenInUseUsageDescription" = "Use your location to check security";
+"NSPhotoLibraryAddUsageDescription" = "Add photos to your photo library";
+"NSPhotoLibraryUsageDescription" = "Read images from your photo library to set a avatar or scan codes";

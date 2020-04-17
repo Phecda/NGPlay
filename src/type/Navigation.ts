@@ -12,6 +12,7 @@ export type MainStackParamList = {
   RNDeviceInfoList: undefined;
   WebviewScreen: { uri: string } | undefined;
   RNLocalize: undefined;
+  RNCamera: undefined;
 };
 
 export type MainTabScreenProps<RouteName extends keyof MainTabParamList> = {
