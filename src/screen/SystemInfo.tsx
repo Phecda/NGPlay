@@ -4,7 +4,6 @@ import { screensEnabled } from 'react-native-screens';
 import { useNetInfo } from '@react-native-community/netinfo';
 import { ListItem, BGScroll, Card, Divider } from '../component/View';
 import { MainTabScreenProps } from '../type/Navigation';
-import { useI18nStrings } from '../i18n';
 
 declare var global: { HermesInternal: null | {} };
 
@@ -12,7 +11,6 @@ const SystemInfo = ({
   navigation,
   route,
 }: MainTabScreenProps<'SystemInfo'>) => {
-  const strings = useI18nStrings();
   const netInfo = useNetInfo();
   const { width, height, fontScale, scale } = useWindowDimensions();
   return (
@@ -59,36 +57,6 @@ const SystemInfo = ({
         <ListItem
           title="details"
           rightTitle={JSON.stringify(netInfo.details)}
-        />
-      </Card>
-      <Card shadow>
-        <ListItem
-          title="RNDeviceInfo"
-          onPress={() => navigation.navigate('RNDeviceInfoList')}
-          chevron
-        />
-        <Divider />
-        <ListItem
-          title={'RNCWebview'}
-          onPress={() =>
-            navigation.navigate('WebviewScreen', {
-              uri: 'https://www.baidu.com',
-            })
-          }
-          chevron
-        />
-        <Divider />
-        <ListItem
-          title={'RNLocalize'}
-          onPress={() => navigation.navigate('RNLocalize')}
-          rightTitle={strings.name}
-          chevron
-        />
-        <Divider />
-        <ListItem
-          title={'Camera'}
-          onPress={() => navigation.navigate('RNCamera')}
-          chevron
         />
       </Card>
     </BGScroll>

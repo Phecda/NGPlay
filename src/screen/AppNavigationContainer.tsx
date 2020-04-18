@@ -21,6 +21,7 @@ import { Platform } from 'react-native';
 import RNLocalize from './RNLocalize';
 import { useI18nStrings } from '../i18n';
 import CameraScreen from './CameraScreen';
+import Library from './Library';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -64,6 +65,14 @@ const Home = () => {
                     name={'ios-color-palette'}
                   />
                 );
+              case 'Library':
+                return (
+                  <Ionicons
+                    size={size}
+                    color={color}
+                    name={focused ? 'ios-list-box' : 'ios-list'}
+                  />
+                );
               default:
                 break;
             }
@@ -71,6 +80,7 @@ const Home = () => {
         };
       }}
     >
+      <MainTab.Screen name="Library" component={Library} />
       <MainTab.Screen name="SystemInfo" component={SystemInfo} />
       <MainTab.Screen name="DesignList" component={DesignList} />
     </MainTab.Navigator>
