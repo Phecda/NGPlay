@@ -22,6 +22,7 @@ import RNLocalize from './RNLocalize';
 import { useI18nStrings } from '../i18n';
 import CameraScreen from './CameraScreen';
 import Library from './Library';
+import ReadableCode from './ReadableCode';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -123,6 +124,7 @@ const Container = () => {
         />
         <MainStack.Screen name="RNLocalize" component={RNLocalize} />
         <MainStack.Screen name="RNCamera" component={CameraScreen} />
+        <MainStack.Screen name="RNCode" component={ReadableCode} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

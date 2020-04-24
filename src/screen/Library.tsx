@@ -35,6 +35,12 @@ const Library = ({ navigation }: MainTabScreenProps<'Library'>) => {
         onPress={() => navigation.navigate('RNCamera')}
         chevron
       />
+      <Divider />
+      <ListItem
+        title={'Readable Code'}
+        onPress={() => navigation.navigate('RNCode')}
+        chevron
+      />
     </BGScroll>
   );
 };
