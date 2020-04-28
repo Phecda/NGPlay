@@ -41,6 +41,12 @@ const Library = ({ navigation }: MainTabScreenProps<'Library'>) => {
         onPress={() => navigation.navigate('RNCode')}
         chevron
       />
+      <Divider />
+      <ListItem
+        title={'Shortcut'}
+        onPress={() => navigation.navigate('ShortcutItem')}
+        chevron
+      />
     </BGScroll>
   );
 };

@@ -7098,6 +7098,10 @@ react-native-progress@^4.1.2:
     "@react-native-community/art" "^1.1.2"
     prop-types "^15.7.2"
 
+"react-native-quick-actions@https://github.com/Phecda/react-native-quick-actions#master":
+  version "0.3.13"
+  resolved "https://github.com/Phecda/react-native-quick-actions#63d7680ed97e23c99889fb8573bcc8c0693e8e42"
+
 react-native-ratings@^6.3.0:
   version "6.5.0"
   resolved "https://registry.npm.taobao.org/react-native-ratings/download/react-native-ratings-6.5.0.tgz#a1606ccba3c5b54eec8e6cfa4765a45cf0e4ab8d"
