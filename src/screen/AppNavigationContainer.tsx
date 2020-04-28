@@ -23,6 +23,10 @@ import { useI18nStrings } from '../i18n';
 import CameraScreen from './CameraScreen';
 import Library from './Library';
 import ReadableCode from './ReadableCode';
+import { useDeepLinking } from '../utility/handleDeepLinking';
+import { navigationRef, useMountedRef } from '../utility/rootNavigation';
+import ShortcutPage from './ShortcutItem';
+import useQuickAction from '../utility/useQuickAction';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -93,8 +97,14 @@ const MainStack = createStackNavigator<MainStackParamList>();
 const Container = () => {
   const inDarkMode = useDarkMode();
   const strings = useI18nStrings();
+
+  useMountedRef();
+  useDeepLinking();
+  useQuickAction();
+
   return (
     <NavigationContainer
+      ref={navigationRef}
       theme={inDarkMode ? themeForNav.dark : themeForNav.light}
     >
       <MainStack.Navigator
@@ -125,6 +135,7 @@ const Container = () => {
         <MainStack.Screen name="RNLocalize" component={RNLocalize} />
         <MainStack.Screen name="RNCamera" component={CameraScreen} />
         <MainStack.Screen name="RNCode" component={ReadableCode} />
+        <MainStack.Screen name="ShortcutItem" component={ShortcutPage} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

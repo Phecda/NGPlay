@@ -9,11 +9,18 @@ import { NativeModules, Alert } from 'react-native';
 
 const items: ShortcutItem[] = [
   {
-    type: 'Library',
+    type: 'Shortcut',
     title: 'Shortcut',
     subtitle: 'Show shortcut page',
     userInfo: { url: 'ngplay://open.my.app/ShortcutItem?id=trigger' },
     icon: 'Compose',
+  },
+  {
+    type: 'SystemInfo',
+    title: 'System Info',
+    subtitle: 'Show SystemInfo tab',
+    userInfo: { url: 'ngplay://open.my.app/SystemInfo' },
+    icon: 'Order',
   },
 ];
 

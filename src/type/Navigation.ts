@@ -9,12 +9,13 @@ export type MainTabParamList = {
 };
 
 export type MainStackParamList = {
-  MainTab: undefined;
+  MainTab: { screen?: keyof MainTabParamList };
   RNDeviceInfoList: undefined;
   WebviewScreen: { uri: string } | undefined;
   RNLocalize: undefined;
   RNCamera: undefined;
   RNCode: undefined;
+  ShortcutItem: { id?: string };
 };
 
 export type MainTabScreenProps<RouteName extends keyof MainTabParamList> = {
