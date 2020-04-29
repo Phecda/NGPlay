@@ -1,3 +1,5 @@
+declare module 'local-types';
+
 declare type NVPair<V = string> = { name: string; value: V };
 
 declare type PromiseResult<T extends Promise<any>> = T extends Promise<infer U>
