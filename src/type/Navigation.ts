@@ -6,6 +6,7 @@ export type MainTabParamList = {
   Library: undefined;
   SystemInfo: undefined;
   DesignList: undefined;
+  Me: undefined;
 };
 
 export type MainStackParamList = {
@@ -16,6 +17,10 @@ export type MainStackParamList = {
   RNCamera: undefined;
   RNCode: undefined;
   ShortcutItem: { id?: string };
+};
+
+export type AuthStackParamList = {
+  Login: undefined;
 };
 
 export type MainTabScreenProps<RouteName extends keyof MainTabParamList> = {
@@ -29,4 +34,9 @@ export type MainTabScreenProps<RouteName extends keyof MainTabParamList> = {
 export type MainStackScreenProps<RouteName extends keyof MainStackParamList> = {
   navigation: StackNavigationProp<MainStackParamList, RouteName>;
   route: RouteProp<MainStackParamList, RouteName>;
+};
+
+export type AuthStackScreenProps<RouteName extends keyof AuthStackParamList> = {
+  navigation: StackNavigationProp<AuthStackParamList, RouteName>;
+  route: RouteProp<AuthStackParamList, RouteName>;
 };

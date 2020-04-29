@@ -10,7 +10,11 @@ import {
   HeaderStyleInterpolators,
 } from '@react-navigation/stack';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { MainTabParamList, MainStackParamList } from '../type/Navigation';
+import {
+  MainTabParamList,
+  MainStackParamList,
+  AuthStackParamList,
+} from '../type/Navigation';
 import SystemInfo from './SystemInfo';
 import DesignList from './DesignList';
 import { useDarkMode } from 'react-native-dark-mode';
@@ -27,6 +31,9 @@ import { useDeepLinking } from '../utility/handleDeepLinking';
 import { navigationRef, useMountedRef } from '../utility/rootNavigation';
 import ShortcutPage from './ShortcutItem';
 import useQuickAction from '../utility/useQuickAction';
+import { useReduxState } from '../store/hooks';
+import LoginScreen from './Login';
+import MeScreen from './Me';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -36,7 +43,7 @@ function getTabHeader(
   }
 ) {
   const { state } = route;
-  if (!state) return 'SystemInfo';
+  if (!state) return 'Library';
   const { routeNames, index } = state;
   const routeName = routeNames[index] as keyof MainTabParamList;
   return routeName;
@@ -78,6 +85,10 @@ const Home = () => {
                     name={focused ? 'ios-list-box' : 'ios-list'}
                   />
                 );
+              case 'Me':
+                return (
+                  <Ionicons size={size} color={color} name={'ios-person'} />
+                );
               default:
                 break;
             }
@@ -88,15 +99,19 @@ const Home = () => {
       <MainTab.Screen name="Library" component={Library} />
       <MainTab.Screen name="SystemInfo" component={SystemInfo} />
       <MainTab.Screen name="DesignList" component={DesignList} />
+      <MainTab.Screen name="Me" component={MeScreen} />
     </MainTab.Navigator>
   );
 };
 
 const MainStack = createStackNavigator<MainStackParamList>();
 
+const AuthStack = createStackNavigator<AuthStackParamList>();
+
 const Container = () => {
   const inDarkMode = useDarkMode();
   const strings = useI18nStrings();
+  const user = useReduxState('user');
 
   useMountedRef();
   useDeepLinking();
@@ -107,36 +122,42 @@ const Container = () => {
       ref={navigationRef}
       theme={inDarkMode ? themeForNav.dark : themeForNav.light}
     >
-      <MainStack.Navigator
-        screenOptions={{
-          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
-          headerTruncatedBackTitle: strings.navigation.back,
-        }}
-      >
-        <MainStack.Screen
-          name="MainTab"
-          component={Home}
-          options={({ route }) => {
-            return { headerTitle: getTabHeader(route) };
+      {user.token ? (
+        <MainStack.Navigator
+          screenOptions={{
+            headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
+            headerTruncatedBackTitle: strings.navigation.back,
           }}
-        />
-        <MainStack.Screen
-          name="RNDeviceInfoList"
-          component={RNDeviceInfoList}
-        />
-        <MainStack.Screen
-          name="WebviewScreen"
-          component={WebviewScreen}
-          options={({ navigation, route }) => ({
-            // FIXME: https://github.com/react-native-community/react-native-webview/issues/575#issuecomment-587267906
-            animationEnabled: Platform.OS === 'ios',
-          })}
-        />
-        <MainStack.Screen name="RNLocalize" component={RNLocalize} />
-        <MainStack.Screen name="RNCamera" component={CameraScreen} />
-        <MainStack.Screen name="RNCode" component={ReadableCode} />
-        <MainStack.Screen name="ShortcutItem" component={ShortcutPage} />
-      </MainStack.Navigator>
+        >
+          <MainStack.Screen
+            name="MainTab"
+            component={Home}
+            options={({ route }) => {
+              return { headerTitle: getTabHeader(route) };
+            }}
+          />
+          <MainStack.Screen
+            name="RNDeviceInfoList"
+            component={RNDeviceInfoList}
+          />
+          <MainStack.Screen
+            name="WebviewScreen"
+            component={WebviewScreen}
+            options={({ navigation, route }) => ({
+              // FIXME: https://github.com/react-native-community/react-native-webview/issues/575#issuecomment-587267906
+              animationEnabled: Platform.OS === 'ios',
+            })}
+          />
+          <MainStack.Screen name="RNLocalize" component={RNLocalize} />
+          <MainStack.Screen name="RNCamera" component={CameraScreen} />
+          <MainStack.Screen name="RNCode" component={ReadableCode} />
+          <MainStack.Screen name="ShortcutItem" component={ShortcutPage} />
+        </MainStack.Navigator>
+      ) : (
+        <AuthStack.Navigator>
+          <AuthStack.Screen name="Login" component={LoginScreen} />
+        </AuthStack.Navigator>
+      )}
     </NavigationContainer>
   );
 };
