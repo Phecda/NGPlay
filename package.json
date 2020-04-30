@@ -31,6 +31,7 @@
     "react-native-dark-mode": "^0.2.2",
     "react-native-device-info": "^5.5.4",
     "react-native-elements": "^1.2.7",
+    "react-native-fingerprint-scanner": "https://github.com/Phecda/react-native-fingerprint-scanner#release",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-image-crop-picker": "^0.28.0",
     "react-native-localize": "^1.4.0",

@@ -249,6 +249,8 @@ PODS:
     - React
   - react-native-code (1.0.0-1):
     - React
+  - react-native-fingerprint-scanner (4.0.0):
+    - React
   - react-native-netinfo (5.7.1):
     - React
   - react-native-safe-area-context (0.7.3):
@@ -381,6 +383,7 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-camera (from `../node_modules/react-native-camera`)
   - "react-native-code (from `../node_modules/@phecdas/react-native-code`)"
+  - react-native-fingerprint-scanner (from `../node_modules/react-native-fingerprint-scanner`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-webview (from `../node_modules/react-native-webview`)
@@ -466,6 +469,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-camera"
   react-native-code:
     :path: "../node_modules/@phecdas/react-native-code"
+  react-native-fingerprint-scanner:
+    :path: "../node_modules/react-native-fingerprint-scanner"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
   react-native-safe-area-context:
@@ -554,6 +559,7 @@ SPEC CHECKSUMS:
   React-jsinspector: f74a62727e5604119abd4a1eda52c0a12144bcd5
   react-native-camera: 1b52abea404d04e040edb3e74b7c5523c01a3089
   react-native-code: 8e0e693b36c1d928a9d00f8e90feb443c3e8aa15
+  react-native-fingerprint-scanner: 03f3d966edacf2f515e361595b6778d3502db4fb
   react-native-netinfo: 4fa023c153d582aeae8435df95c9a975c5986449
   react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
   react-native-webview: 0633fd7861a9bd7a80bacaee7da763c3afc248fa

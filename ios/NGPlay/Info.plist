@@ -52,6 +52,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Use your camera to take a photo or scan codes</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Allow you a quick and secure access</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Use your location to check security</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
