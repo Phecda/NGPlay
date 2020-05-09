@@ -34,6 +34,7 @@ import useQuickAction from '../utility/useQuickAction';
 import { useReduxState } from '../store/hooks';
 import LoginScreen from './Login';
 import MeScreen from './Me';
+import RNDialogs from './Dialogs';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -152,6 +153,7 @@ const Container = () => {
           <MainStack.Screen name="RNCamera" component={CameraScreen} />
           <MainStack.Screen name="RNCode" component={ReadableCode} />
           <MainStack.Screen name="ShortcutItem" component={ShortcutPage} />
+          <MainStack.Screen name="RNDialogs" component={RNDialogs} />
         </MainStack.Navigator>
       ) : (
         <AuthStack.Navigator>

@@ -47,6 +47,11 @@ const Library = ({ navigation }: MainTabScreenProps<'Library'>) => {
         onPress={() => navigation.navigate('ShortcutItem')}
         chevron
       />
+      <Divider />
+      <ListItem
+        title={'RNDialogs'}
+        onPress={() => navigation.navigate('RNDialogs')}
+      />
     </BGScroll>
   );
 };

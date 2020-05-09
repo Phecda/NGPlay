@@ -17,6 +17,7 @@ export type MainStackParamList = {
   RNCamera: undefined;
   RNCode: undefined;
   ShortcutItem: { id?: string };
+  RNDialogs: undefined;
 };
 
 export type AuthStackParamList = {
