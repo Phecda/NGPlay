@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useReducer } from 'react';
-import { useImmerReducer } from '@huse/immer';
+import { useImmerReducer } from 'use-immer';
 import RNCWebview from 'react-native-webview';
 import { reducer, defaultState, webActions, WebviewActions } from './reducer';
 import { BGView } from '../../component/View';

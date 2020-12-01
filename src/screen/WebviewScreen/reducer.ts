@@ -1,6 +1,6 @@
 import React, { Reducer } from 'react';
 import { WebViewNavigation } from 'react-native-webview';
-import { ImmerReducer } from '@huse/immer';
+import { Reducer as ImmerReducer } from 'use-immer';
 import {
   WebViewError,
   WebViewProgressEvent,

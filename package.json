@@ -11,9 +11,8 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "@huse/boolean": "^1.0.2",
-    "@huse/immer": "^1.0.2",
-    "@huse/previous-value": "^1.0.1",
+    "@huse/boolean": "^1.0.4",
+    "@huse/previous-value": "^1.0.3",
     "@phecdas/react-native-code": "^1.0.0-1",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/async-storage": "^1.9.0",
@@ -24,7 +23,7 @@
     "@react-navigation/material-top-tabs": "^5.3.10",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
-    "immer": "^6.0.3",
+    "immer": "^8.0.0",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-camera": "^3.23.1",
@@ -51,7 +50,8 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "typesafe-actions": "^5.1.0",
-    "url-parse": "^1.4.7"
+    "url-parse": "^1.4.7",
+    "use-immer": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
