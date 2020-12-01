@@ -7774,10 +7774,10 @@ react-native-localize@^1.4.0:
   version "2.0.0"
   resolved "https://github.com/Phecda/react-native-native-dialogs.git#13686d7450665a62cc68293c8627da67bd5f918c"
 
-react-native-permissions@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.npm.taobao.org/react-native-permissions/download/react-native-permissions-2.1.2.tgz#14f30a6cfa0851ecb210d7eadcc590f8823c8585"
-  integrity sha1-FPMKbPoIUeyyENfq3MWQ+II8hYU=
+react-native-permissions@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/react-native-permissions/download/react-native-permissions-3.0.0.tgz#d9d107700741d41f8392f202f35a61f481fb0e68"
+  integrity sha1-2dEHcAdB1B+DkvIC81ph9IH7Dmg=
 
 react-native-progress@^4.1.2:
   version "4.1.2"
