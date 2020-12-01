@@ -408,7 +408,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - RNLocalize (from `../node_modules/react-native-localize`)
-  - RNNativeDialogs (from `../../react-native-native-dialogs`)
+  - RNNativeDialogs (from `../node_modules/react-native-native-dialogs`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNQuickAction (from `../node_modules/react-native-quick-actions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -517,7 +517,7 @@ EXTERNAL SOURCES:
   RNLocalize:
     :path: "../node_modules/react-native-localize"
   RNNativeDialogs:
-    :path: "../../react-native-native-dialogs"
+    :path: "../node_modules/react-native-native-dialogs"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   RNQuickAction:
