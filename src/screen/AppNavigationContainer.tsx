@@ -1,8 +1,8 @@
 import React from 'react';
 import {
+  getFocusedRouteNameFromRoute,
   NavigationContainer,
   RouteProp,
-  TabNavigationState,
 } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {
@@ -38,15 +38,8 @@ import RNDialogs from './Dialogs';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
-function getTabHeader(
-  route: RouteProp<MainStackParamList, 'MainTab'> & {
-    state?: TabNavigationState;
-  }
-) {
-  const { state } = route;
-  if (!state) return 'Library';
-  const { routeNames, index } = state;
-  const routeName = routeNames[index] as keyof MainTabParamList;
+function getTabHeader(route: RouteProp<MainStackParamList, 'MainTab'>) {
+  const routeName = getFocusedRouteNameFromRoute(route) ?? 'Library';
   return routeName;
 }
 
