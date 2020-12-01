@@ -153,7 +153,7 @@ function WebviewHeader({ state, dispatch, webview }: Props) {
               autoCapitalize="none"
               autoCorrect={false}
               autoFocus
-              onBlur={(e) => {
+              onBlur={e => {
                 toggleFocused();
               }}
               clearButtonMode="while-editing"

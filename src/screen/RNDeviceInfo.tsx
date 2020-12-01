@@ -5,7 +5,7 @@ import { ListItem, Divider, BGList } from '../component/View';
 type DeviceInfoMethod = keyof typeof DeviceInfo;
 
 const keys = Object.keys(DeviceInfo).filter(
-  (k) => !k.startsWith('use') && !/Sync/.test(k)
+  k => !k.startsWith('use') && !/Sync/.test(k)
 ) as Array<DeviceInfoMethod>;
 
 const DeviceInfoItem = ({ k }: { k: DeviceInfoMethod }) => {

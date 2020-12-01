@@ -22,7 +22,7 @@ const DesignList = () => {
   return (
     <BGScroll>
       <Card round>
-        {Object.keys(labelColor).map((name) => {
+        {Object.keys(labelColor).map(name => {
           return (
             <ListItem
               title={name}
@@ -35,7 +35,7 @@ const DesignList = () => {
         })}
       </Card>
       <Card round>
-        {Object.keys(rainbow).map((name) => {
+        {Object.keys(rainbow).map(name => {
           const color = rainbow[name as keyof typeof rainbow];
           return (
             <ListItem

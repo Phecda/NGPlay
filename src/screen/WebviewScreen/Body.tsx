@@ -39,14 +39,14 @@ const Body = React.forwardRef<
   );
 
   const shouldRequest: OnShouldStartLoadWithRequest = useCallback(
-    (request) => {
+    request => {
       const { url } = request;
       if (url.startsWith('http') || url === 'about:blank') {
         return true;
       } else {
         dispatch(webActions.changeNavigationState(request));
         Linking.canOpenURL(url)
-          .then((canOpen) => {
+          .then(canOpen => {
             if (canOpen) {
               return Linking.openURL(url);
             }

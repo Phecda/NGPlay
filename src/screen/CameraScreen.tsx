@@ -219,7 +219,7 @@ const CameraScreen = () => {
       </BGScroll>
       <CameraModal
         visible={cameraVisible}
-        onTakenPicture={(picture) => {
+        onTakenPicture={picture => {
           setTempPicture(picture);
           closeCamera();
         }}
@@ -228,7 +228,7 @@ const CameraScreen = () => {
       <Scanner
         visible={scannerVisible}
         onCancel={closeScanner}
-        onScanCode={(e) => {
+        onScanCode={e => {
           setCodeData(e.data);
           setCodeType(e.type);
           closeScanner();

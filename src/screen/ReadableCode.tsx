@@ -18,7 +18,7 @@ const ReadableCode = () => {
       <Card round>
         <Input
           defaultValue={qrValue}
-          onSubmitEditing={(e) => setQRValue(e.nativeEvent.text)}
+          onSubmitEditing={e => setQRValue(e.nativeEvent.text)}
           placeholder="QR Code"
         />
         {!!qrValue && (
@@ -30,7 +30,7 @@ const ReadableCode = () => {
       <Card round>
         <Input
           defaultValue={barValue}
-          onSubmitEditing={(e) => setBarValue(e.nativeEvent.text)}
+          onSubmitEditing={e => setBarValue(e.nativeEvent.text)}
           placeholder="Bar Code"
           keyboardType="number-pad"
         />
