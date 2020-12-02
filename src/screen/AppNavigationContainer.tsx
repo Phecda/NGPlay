@@ -76,7 +76,7 @@ const Home = () => {
                   <Ionicons
                     size={size}
                     color={color}
-                    name={focused ? 'ios-list-box' : 'ios-list'}
+                    name={focused ? 'ios-list-circle' : 'ios-list'}
                   />
                 );
               case 'Me':

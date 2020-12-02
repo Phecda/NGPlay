@@ -242,24 +242,24 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-camera (3.23.1):
-    - React
-    - react-native-camera/RCT (= 3.23.1)
-    - react-native-camera/RN (= 3.23.1)
-  - react-native-camera/RCT (3.23.1):
-    - React
-  - react-native-camera/RN (3.23.1):
-    - React
+  - react-native-camera (3.40.0):
+    - React-Core
+    - react-native-camera/RCT (= 3.40.0)
+    - react-native-camera/RN (= 3.40.0)
+  - react-native-camera/RCT (3.40.0):
+    - React-Core
+  - react-native-camera/RN (3.40.0):
+    - React-Core
   - react-native-code (1.0.0-1):
     - React
   - react-native-fingerprint-scanner (4.0.0):
     - React
-  - react-native-netinfo (5.7.1):
-    - React
+  - react-native-netinfo (5.9.9):
+    - React-Core
   - react-native-safe-area-context (3.1.9):
     - React-Core
-  - react-native-webview (9.1.1):
-    - React
+  - react-native-webview (11.0.0):
+    - React-Core
   - React-RCTActionSheet (0.63.4):
     - React-Core/RCTActionSheetHeaders (= 0.63.4)
   - React-RCTAnimation (0.63.4):
@@ -324,12 +324,12 @@ PODS:
     - React
   - ReactNativeDarkMode (0.2.2):
     - React
-  - RNCAsyncStorage (1.9.0):
-    - React
+  - RNCAsyncStorage (1.12.1):
+    - React-Core
   - RNCMaskedView (0.1.10):
     - React
-  - RNDeviceInfo (5.5.4):
-    - React
+  - RNDeviceInfo (7.2.1):
+    - React-Core
   - RNGestureHandler (1.9.0):
     - React-Core
   - RNImageCropPicker (0.35.1):
@@ -341,8 +341,8 @@ PODS:
     - React-Core
     - React-RCTImage
     - TOCropViewController
-  - RNLocalize (1.4.0):
-    - React
+  - RNLocalize (2.0.1):
+    - React-Core
   - RNNativeDialogs (2.0.0):
     - React
   - RNPermissions (3.0.0):
@@ -583,12 +583,12 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-camera: 1b52abea404d04e040edb3e74b7c5523c01a3089
+  react-native-camera: 35854c4f764a4a6cf61c1c3525888b92f0fe4b31
   react-native-code: 8e0e693b36c1d928a9d00f8e90feb443c3e8aa15
   react-native-fingerprint-scanner: 03f3d966edacf2f515e361595b6778d3502db4fb
-  react-native-netinfo: 4fa023c153d582aeae8435df95c9a975c5986449
+  react-native-netinfo: 0212ce8604e88edf686f1481b925b17a42a52449
   react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
-  react-native-webview: 0633fd7861a9bd7a80bacaee7da763c3afc248fa
+  react-native-webview: 6b7950628616679d81bdd75747e50cf6de9b5a5f
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
@@ -601,12 +601,12 @@ SPEC CHECKSUMS:
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   ReactNativeART: 78edc68dd4a1e675338cd0cd113319cf3a65f2ab
   ReactNativeDarkMode: 0178ffca3b10f6a7c9f49d6f9810232b328fa949
-  RNCAsyncStorage: 453cd7c335ec9ba3b877e27d02238956b76f3268
+  RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
-  RNDeviceInfo: 6a3d16fce033f6979c4a6a41e62244d183e8c765
+  RNDeviceInfo: ae953cf4af2775e45597304fc9513a7931ef81ff
   RNGestureHandler: 9b7e605a741412e20e13c512738a31bd1611759b
   RNImageCropPicker: 16951bc02411f50c4d197488ed6406a23dc3b5f1
-  RNLocalize: b6df30cc25ae736d37874f9bce13351db2f56796
+  RNLocalize: 41026b7c14878f1a1b381bc79f668f1fbf841adb
   RNNativeDialogs: 09de1929ba1610b8aa03f021584cc0c9762eb5af
   RNPermissions: 99dd8d4a30ff13509b949ca63cd1f69edc461775
   RNQuickAction: 6d404a869dc872cde841ad3147416a670d13fa93
